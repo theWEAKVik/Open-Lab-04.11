@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Open_Lab_04._11
 {
@@ -6,7 +8,10 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            throw new NotImplementedException();
+            char[] pismena = str.ToCharArray();
+            Array.Sort(pismena);
+            string hotovo = string.Join("", pismena);
+            return hotovo;         
         }
     }
 }
